@@ -3,20 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 
 import Welcome from './components/Welcome'
 import Counter from './components/Counter'
+import HorizontalStrech from './components/layout/HorizontalStrech'
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Counter/>
-    </View>
-  );
-}
+export default HorizontalStrech;
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
