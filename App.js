@@ -1,9 +1,15 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 
-import Welcome from './components/Welcome'
-import Counter from './components/Counter'
-import HorizontalStrech from './components/layout/HorizontalStrech'
+import Todos from './components/Todos'
+import Users from './components/Users'
 
-export default HorizontalStrech;
+const App=()=>{
+    return(
+        <View style={{flex:1,width:"100%",height:"100%"}}>
+            <Todos/>
+        </View>
+    )
+};
 
+export default App;

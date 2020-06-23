@@ -1,7 +1,8 @@
 import React, {Component} from 'react'
-
 import {
-    Text
+    View,
+    Text,
+    StyleSheet
 } from 'react-native'
 
 class Welcome extends Component{
@@ -21,9 +22,17 @@ class Welcome extends Component{
 
     render(){
         return(
-            <Text onPress={this.updateClicks} style={{fontSize:"20px"}}>Welcome to {this.props.name} - ({this.state.clicks})</Text>
+            <View>
+                <Text onPress={this.updateClicks} style={styles.welcomeText}>Welcome to {this.props.name} - ({this.state.clicks})</Text>
+            </View>
         )
     }
 }
+
+var styles=StyleSheet.create({
+    welcomeText:{
+        fontSize:60
+    }
+})
 
 export default Welcome;
